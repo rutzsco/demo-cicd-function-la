@@ -57,19 +57,15 @@ resource function_app 'Microsoft.Web/sites@2020-12-01' = {
         }
         {
           name: 'FUNCTIONS_EXTENSION_VERSION'
-          value: '~3'
+          value: '~4'
         }
         {
           name: 'FUNCTIONS_WORKER_RUNTIME'
-          value: 'node'
+          value: 'dotnet'
         }
         {
           name: 'WEBSITE_NODE_DEFAULT_VERSION'
           value: '~14'
-        }
-        {
-          name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: 'https://github.com/mjisaak/azure-func-with-bicep/releases/download/v0.0.1/function.zip'
         }
       ]
     }

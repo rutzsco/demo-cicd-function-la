@@ -9,7 +9,7 @@ param functionAppStorageBaseName string = ''
 
 // Resource names
 var functionAppName = '${applicationName}-${environmentSuffix}'
-var functionStorageAccountName = '${functionStorageAccountName}${environmentSuffix}'
+var functionStorageAccountName = '${functionAppStorageBaseName}${environmentSuffix}'
 // Function
 module function 'function.bicep' = {
   name: 'functionDeploy'
